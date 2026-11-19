@@ -88,7 +88,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                     onClick={() => { setActiveTab('pay'); setStep(1); }}
                     className={`flex-1 py-4 text-center text-sm font-semibold border-b-2 transition-all flex justify-center items-center gap-2 ${
                         currentTab === 'pay' 
-                            ? 'border-blue-600 text-blue-600' 
+                            ? 'border-primary text-primary' 
                             : 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300'
                     }`}
                 >
@@ -100,7 +100,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                     onClick={() => { setActiveTab('receipt'); setViewingReceipt(null); }}
                     className={`flex-1 py-4 text-center text-sm font-semibold border-b-2 transition-all flex justify-center items-center gap-2 ${
                         currentTab === 'receipt' 
-                            ? 'border-blue-600 text-blue-600' 
+                            ? 'border-primary text-primary' 
                             : 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300'
                     }`}
                 >
@@ -112,7 +112,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                     onClick={() => setActiveTab('refund')}
                     className={`flex-1 py-4 text-center text-sm font-semibold border-b-2 transition-all flex justify-center items-center gap-2 ${
                         currentTab === 'refund' 
-                            ? 'border-blue-600 text-blue-600' 
+                            ? 'border-primary text-primary' 
                             : 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300'
                     }`}
                 >
@@ -125,24 +125,23 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
             {currentTab === 'pay' && (
                 <div className="space-y-8 print:hidden">
                     {/* Hero Direct Action Banner */}
-                    <div className="bg-gradient-to-br from-blue-900 via-indigo-900 to-slate-900 p-8 rounded-3xl text-white shadow-lg relative overflow-hidden border border-transparent">
-                        <div className="absolute right-0 top-0 opacity-10 w-96 h-96 rounded-full border-[40px] border-white select-none pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
-                        <div className="relative z-10 max-w-2xl">
-                            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold rounded-full border border-blue-400/30 uppercase tracking-wider mb-4 inline-block">
+                    <div className="bg-primary/5 p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-primary/15">
+                        <div className="max-w-3xl">
+                            <span className="px-2.5 py-1 bg-white text-primary text-[11px] font-semibold rounded-full border border-primary/20 uppercase tracking-wider mb-3 sm:mb-4 inline-block">
                                 Official Online Payment Portal
                             </span>
-                            <h3 className="text-2xl sm:text-3xl font-extrabold mb-3 text-white">
+                            <h3 className="text-xl sm:text-3xl font-bold mb-2 sm:mb-3 text-slate-900">
                                 Pay Annual Academic Fees Online
                             </h3>
-                            <p className="text-slate-300 text-sm font-light leading-relaxed mb-6">
+                            <p className="text-slate-600 text-sm leading-relaxed mb-5 sm:mb-6">
                                 MSIT students can securely pay their annual academic, tuition, and hostel fees directly through the official Octopod fee payment portal.
                             </p>
-                            <div className="flex flex-col sm:flex-row gap-4">
+                            <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-4">
                                 <a 
                                     href="https://octopod.co.in/student/admission/81a9421f2cfc48f2e5f5278efa47382b" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-sm transition-all shadow-md flex items-center justify-center gap-2 group cursor-pointer"
+                                    className="px-5 sm:px-6 py-3 sm:py-3.5 bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl text-sm transition-colors shadow-sm flex items-center justify-center gap-2 group cursor-pointer"
                                 >
                                     <span>Proceed to Official Octopod Fee Portal</span>
                                     <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -151,7 +150,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                                     href="https://www.msit.in/media/news/fee-submission-notice-for-the-academic-year-2026-27.pdf" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl text-sm transition-all border border-white/20 flex items-center justify-center gap-2 cursor-pointer"
+                                    className="px-5 sm:px-6 py-3 sm:py-3.5 bg-white hover:bg-slate-50 text-slate-800 font-semibold rounded-xl text-sm transition-colors border border-slate-300 flex items-center justify-center gap-2 cursor-pointer"
                                 >
                                     <Download className="w-4 h-4" />
                                     <span>Official Fee Notice PDF</span>
@@ -163,23 +162,23 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                     {/* Official Batch-wise Fee Breakdown Cards */}
                     <div className="space-y-6">
                         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-4">
-                            <h4 className="text-xl font-extrabold text-slate-900 flex items-center gap-2">
-                                <Sparkles className="w-5 h-5 text-blue-600" />
+                            <h4 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+                                <Sparkles className="w-5 h-5 text-primary" />
                                 Annual Fee Structure & Amounts Required
                             </h4>
                             <span className="text-xs text-slate-500 font-medium">As per GGSIPU & SFRC Notifications (AY 2026–27)</span>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-5">
                             {/* 1st Year */}
-                            <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-md transition-all">
+                            <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/90 shadow-xs">
                                 <div className="flex justify-between items-start mb-3">
                                     <div>
-                                        <span className="px-2.5 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-extrabold rounded-md uppercase tracking-wider">Fresh Admission</span>
+                                        <span className="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-semibold rounded-md uppercase tracking-wider">Fresh Admission</span>
                                         <h5 className="text-lg font-bold text-slate-900 mt-1">B.Tech 1st Year</h5>
                                     </div>
                                     <div className="text-right">
-                                        <div className="text-2xl font-black text-blue-700">₹1,67,000</div>
+                                        <div className="font-[Libre_Baskerville,serif] text-xl sm:text-2xl font-bold text-primary tabular-nums">₹1,67,000</div>
                                         <div className="text-[10px] text-slate-400 uppercase font-bold">Total Annual Fee</div>
                                     </div>
                                 </div>
@@ -192,14 +191,14 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                             </div>
 
                             {/* 2nd Year */}
-                            <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-md transition-all">
+                            <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/90 shadow-xs">
                                 <div className="flex justify-between items-start mb-3">
                                     <div>
-                                        <span className="px-2.5 py-0.5 bg-indigo-50 text-indigo-700 text-[10px] font-extrabold rounded-md uppercase tracking-wider">Batch 2025–29</span>
+                                        <span className="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-semibold rounded-md uppercase tracking-wider">Batch 2025–29</span>
                                         <h5 className="text-lg font-bold text-slate-900 mt-1">B.Tech 2nd Year</h5>
                                     </div>
                                     <div className="text-right">
-                                        <div className="text-2xl font-black text-indigo-700">₹1,59,560</div>
+                                        <div className="font-[Libre_Baskerville,serif] text-xl sm:text-2xl font-bold text-primary tabular-nums">₹1,59,560</div>
                                         <div className="text-[10px] text-slate-400 uppercase font-bold">Total Annual Fee</div>
                                     </div>
                                 </div>
@@ -212,14 +211,14 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                             </div>
 
                             {/* 3rd Year */}
-                            <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-md transition-all">
+                            <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/90 shadow-xs">
                                 <div className="flex justify-between items-start mb-3">
                                     <div>
-                                        <span className="px-2.5 py-0.5 bg-purple-50 text-purple-700 text-[10px] font-extrabold rounded-md uppercase tracking-wider">Batch 2024–28</span>
+                                        <span className="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-semibold rounded-md uppercase tracking-wider">Batch 2024–28</span>
                                         <h5 className="text-lg font-bold text-slate-900 mt-1">B.Tech 3rd Year</h5>
                                     </div>
                                     <div className="text-right">
-                                        <div className="text-2xl font-black text-purple-700">₹1,65,100</div>
+                                        <div className="font-[Libre_Baskerville,serif] text-xl sm:text-2xl font-bold text-primary tabular-nums">₹1,65,100</div>
                                         <div className="text-[10px] text-slate-400 uppercase font-bold">Total Annual Fee</div>
                                     </div>
                                 </div>
@@ -232,14 +231,14 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                             </div>
 
                             {/* 4th Year */}
-                            <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-md transition-all">
+                            <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/90 shadow-xs">
                                 <div className="flex justify-between items-start mb-3">
                                     <div>
-                                        <span className="px-2.5 py-0.5 bg-emerald-50 text-emerald-700 text-[10px] font-extrabold rounded-md uppercase tracking-wider">Batch 2023–27</span>
+                                        <span className="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-semibold rounded-md uppercase tracking-wider">Batch 2023–27</span>
                                         <h5 className="text-lg font-bold text-slate-900 mt-1">B.Tech 4th Year</h5>
                                     </div>
                                     <div className="text-right">
-                                        <div className="text-2xl font-black text-emerald-700">₹1,53,000</div>
+                                        <div className="font-[Libre_Baskerville,serif] text-xl sm:text-2xl font-bold text-primary tabular-nums">₹1,53,000</div>
                                         <div className="text-[10px] text-slate-400 uppercase font-bold">Total Annual Fee</div>
                                     </div>
                                 </div>
@@ -252,7 +251,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                         </div>
 
                         {/* Additional info notice */}
-                        <div className="p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs text-amber-900 leading-relaxed font-medium">
+                        <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-700 leading-relaxed font-medium">
                             <strong>Official Payment Guidelines:</strong> Annual fees can be paid online via Net Banking, Debit/Credit Card, UPI through the Octopod link above, or via Demand Draft favoring <em>"Maharaja Surajmal Institute of Technology"</em> payable at New Delhi.
                         </div>
                     </div>
@@ -265,7 +264,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                     {!viewingReceipt ? (
                         <div className="bg-slate-50/50 rounded-3xl border border-slate-200/60 p-6 md:p-10 shadow-xs transition-all duration-300 print:hidden">
                             <div className="flex items-center gap-2 mb-6">
-                                <Receipt className="w-5 h-5 text-blue-500" />
+                                <Receipt className="w-5 h-5 text-primary" />
                                 <h3 className="text-xl font-bold text-slate-900">Receipt Lookup</h3>
                             </div>
                             <p className="text-sm text-slate-500 font-light mb-6">
@@ -280,11 +279,11 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                                     value={receiptSearchNo}
                                     onChange={e => setReceiptSearchNo(e.target.value)}
                                     placeholder="Enter Enrollment Number (e.g. 00115002720)"
-                                    className="flex-1 px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all placeholder:text-slate-400 bg-white text-slate-800 text-sm font-medium"
+                                    className="flex-1 px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder:text-slate-400 bg-white text-slate-800 text-sm font-medium"
                                 />
                                 <button 
                                     type="submit" 
-                                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 rounded-xl transition-all shadow-md text-xs sm:text-sm cursor-pointer"
+                                    className="bg-primary hover:bg-primary-dark text-white font-bold px-6 rounded-xl transition-all shadow-md text-xs sm:text-sm cursor-pointer"
                                 >
                                     Search Receipts
                                 </button>
@@ -303,18 +302,18 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                                             {receiptResults.map((receipt, index) => (
                                                 <div 
                                                     key={index} 
-                                                    className="p-4 bg-white border border-slate-200 rounded-xl flex items-center justify-between hover:border-blue-200 hover:shadow-xs transition-all"
+                                                    className="p-4 bg-white border border-slate-200 rounded-xl flex items-center justify-between hover:border-primary/20 hover:shadow-xs transition-all"
                                                 >
                                                     <div className="space-y-1">
-                                                        <div className="text-xs font-extrabold text-slate-900">{receipt.type} ({receipt.term || "Annual"})</div>
+                                                        <div className="text-xs font-bold text-slate-900">{receipt.type} ({receipt.term || "Annual"})</div>
                                                         <div className="text-[10px] text-slate-400 font-medium">Date: {receipt.date} | Ref: {receipt.id}</div>
                                                     </div>
                                                     <div className="flex items-center gap-4">
-                                                        <span className="text-sm font-extrabold text-blue-600">₹{receipt.amount.toLocaleString('en-IN')}</span>
+                                                        <span className="text-sm font-bold text-primary">₹{receipt.amount.toLocaleString('en-IN')}</span>
                                                         <button 
                                                             type="button"
                                                             onClick={() => setViewingReceipt(receipt)}
-                                                            className="px-3.5 py-2 bg-slate-100 hover:bg-blue-50 hover:text-blue-600 text-slate-700 font-bold rounded-lg text-xs transition-colors cursor-pointer"
+                                                            className="px-3.5 py-2 bg-slate-100 hover:bg-primary/5 hover:text-primary text-slate-700 font-bold rounded-lg text-xs transition-colors cursor-pointer"
                                                         >
                                                             View Receipt
                                                         </button>
@@ -343,7 +342,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                                     <button 
                                         type="button"
                                         onClick={triggerPrint}
-                                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-md transition-colors cursor-pointer"
+                                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary hover:bg-primary-dark text-white font-bold text-xs shadow-md transition-colors cursor-pointer"
                                     >
                                         <Printer className="w-4 h-4" /> Print / Save PDF
                                     </button>
@@ -353,29 +352,29 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                             {/* PRINT CONTAINER WITH SPECIAL CLASS FOR CUSTOM CSS OVERRIDE */}
                             <div className="bg-white border-2 border-slate-200 p-8 sm:p-12 rounded-3xl shadow-md font-sans text-slate-800 relative overflow-hidden print:border-0 print:p-0 print:shadow-none ">
                                 {/* MSIT Digital Watermark / Seal in BG */}
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] select-none pointer-events-none w-96 h-96 border-[20px] border-slate-900 rounded-full flex items-center justify-center font-black text-3xl tracking-widest">
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] select-none pointer-events-none w-96 h-96 border-[20px] border-slate-900 rounded-full flex items-center justify-center font-bold text-3xl tracking-widest">
                                     MSIT NEW DELHI
                                 </div>
 
                                 {/* RECEIPT HEADER */}
                                 <div className="flex flex-col md:flex-row justify-between items-center md:items-start border-b-2 border-slate-200 pb-8 gap-6 text-center md:text-left">
                                     <div>
-                                        <h2 className="text-2xl font-black text-slate-900 tracking-tight">MAHARAJA SURAJMAL INSTITUTE OF TECHNOLOGY</h2>
-                                        <p className="text-[10px] uppercase font-black tracking-widest text-slate-400 mt-1">Affiliated to GGSIPU | Approved by AICTE | NBA Accredited</p>
+                                        <h2 className="text-2xl font-bold text-slate-900 tracking-tight">MAHARAJA SURAJMAL INSTITUTE OF TECHNOLOGY</h2>
+                                        <p className="text-[10px] uppercase font-bold tracking-widest text-slate-400 mt-1">Affiliated to GGSIPU | Approved by AICTE | NBA Accredited</p>
                                         <p className="text-xs text-slate-500 font-light mt-1.5">C-4, Janakpuri, New Delhi - 110058</p>
                                         <p className="text-xs text-slate-500 font-light">Email: accounts@msit.in | Web: www.msit.in</p>
                                     </div>
                                     <div className="bg-slate-100 p-4 rounded-xl border border-slate-200 flex flex-col items-center justify-center shrink-0 min-w-[160px]">
-                                        <span className="text-[9px] font-black uppercase tracking-widest text-slate-400">Transaction Status</span>
-                                        <span className="px-2.5 py-0.5 mt-1 bg-emerald-100 text-emerald-800 font-bold rounded text-[10px] uppercase tracking-wider border border-emerald-200 flex items-center gap-1">
-                                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> {viewingReceipt.status}
+                                        <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400">Transaction Status</span>
+                                        <span className="px-2.5 py-0.5 mt-1 bg-primary/10 text-primary font-bold rounded text-[10px] uppercase tracking-wider border border-primary/20 flex items-center gap-1">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-primary"></span> {viewingReceipt.status}
                                         </span>
                                     </div>
                                 </div>
 
                                 {/* RECEIPT DETAILS GRID */}
                                 <div className="my-8">
-                                    <div className="text-center font-extrabold text-base tracking-wider text-slate-900 bg-slate-50 py-2 border-y border-slate-200 mb-6 uppercase">
+                                    <div className="text-center font-bold text-base tracking-wider text-slate-900 bg-slate-50 py-2 border-y border-slate-200 mb-6 uppercase">
                                         Fee Payment Receipt
                                     </div>
 
@@ -410,7 +409,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                                 {/* ITEMIZED BILLING TABLE */}
                                 <table className="w-full my-8 text-xs text-left border-collapse">
                                     <thead>
-                                        <tr className="bg-slate-900 text-white uppercase text-[9px] tracking-wider font-bold">
+                                        <tr className="bg-slate-100 text-slate-700 uppercase text-[9px] tracking-wider font-bold">
                                             <th className="p-3 rounded-l">#</th>
                                             <th className="p-3">Particulars / Description</th>
                                             <th className="p-3 rounded-r text-right">Amount (INR)</th>
@@ -423,7 +422,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                                                 <div className="font-bold text-slate-800">{viewingReceipt.type} ({viewingReceipt.term || 'Semester Fee'})</div>
                                                 <div className="text-[10px] text-slate-400 font-light mt-0.5">Academic session 2026-27 admission/tuition charges.</div>
                                             </td>
-                                            <td className="p-3 text-right font-extrabold text-slate-800">₹{(viewingReceipt.amount - 5000).toLocaleString('en-IN')}</td>
+                                            <td className="p-3 text-right font-bold text-slate-800">₹{(viewingReceipt.amount - 5000).toLocaleString('en-IN')}</td>
                                         </tr>
                                         <tr>
                                             <td className="p-3 font-medium">2</td>
@@ -431,13 +430,13 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                                                 <div className="font-bold text-slate-800">University Examination & Library Charges</div>
                                                 <div className="text-[10px] text-slate-400 font-light mt-0.5">Annual GGSIPU registration and digital content subscription.</div>
                                             </td>
-                                            <td className="p-3 text-right font-extrabold text-slate-800">₹5,000</td>
+                                            <td className="p-3 text-right font-bold text-slate-800">₹5,000</td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
                                         <tr className="border-t-2 border-slate-300 font-bold bg-slate-50">
-                                            <td colSpan="2" className="p-3 text-right font-black uppercase text-[10px] tracking-wider text-slate-500">Grand Total Paid:</td>
-                                            <td className="p-3 text-right font-black text-sm text-blue-700">₹{viewingReceipt.amount.toLocaleString('en-IN')}</td>
+                                            <td colSpan="2" className="p-3 text-right font-bold uppercase text-[10px] tracking-wider text-slate-500">Grand Total Paid:</td>
+                                            <td className="p-3 text-right font-bold text-sm text-primary">₹{viewingReceipt.amount.toLocaleString('en-IN')}</td>
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -454,7 +453,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                                         <div className="w-32 h-10 border-b border-slate-400 flex items-center justify-center mx-auto mb-2 text-slate-400 italic text-xs select-none">
                                             Digitally Verified
                                         </div>
-                                        <div className="text-[9px] font-black uppercase tracking-widest text-slate-500">Accounts Officer</div>
+                                        <div className="text-[9px] font-bold uppercase tracking-widest text-slate-500">Accounts Officer</div>
                                         <div className="text-[8px] text-slate-400 font-light mt-0.5">MSIT Accounts Division</div>
                                     </div>
                                 </div>
@@ -468,7 +467,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
             {currentTab === 'refund' && (
                 <div className="bg-slate-50/50 rounded-3xl border border-slate-200/60 p-6 md:p-10 shadow-xs transition-all duration-300 print:hidden">
                     <div className="flex items-center gap-2 mb-6">
-                        <RefreshCw className="w-5 h-5 text-blue-500" />
+                        <RefreshCw className="w-5 h-5 text-primary" />
                         <h3 className="text-xl font-bold text-slate-900">Fee Refund Guidelines</h3>
                     </div>
 
@@ -481,7 +480,7 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                         <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest border-b border-slate-100 pb-2">Refund Calculation Scale</h4>
                         
                         <div className="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-xs">
-                            <div className="grid grid-cols-3 bg-slate-900 text-white font-bold p-4 text-xs uppercase tracking-wider">
+                            <div className="grid grid-cols-3 bg-slate-100 text-slate-700 font-bold p-4 text-xs uppercase tracking-wider">
                                 <div className="col-span-2">Deduction Criteria</div>
                                 <div className="text-right">Refund Amount</div>
                             </div>
@@ -491,35 +490,35 @@ const FeePaymentPortal = ({ activeTab, setActiveTab }) => {
                                     <div className="col-span-2 pr-4 font-semibold text-slate-800">
                                         Withdrawal request received 15 days or more before the formally-notified last date of admission.
                                     </div>
-                                    <div className="text-right font-extrabold text-emerald-600 self-center">100% Refund*</div>
+                                    <div className="text-right font-bold text-primary self-center">100% Refund*</div>
                                 </div>
                                 
                                 <div className="grid grid-cols-3 p-4 hover:bg-slate-50 transition-colors">
                                     <div className="col-span-2 pr-4 font-semibold text-slate-800">
                                         Withdrawal request received less than 15 days before the formally-notified last date of admission.
                                     </div>
-                                    <div className="text-right font-extrabold text-emerald-500 self-center">90% Refund</div>
+                                    <div className="text-right font-bold text-primary self-center">90% Refund</div>
                                 </div>
                                 
                                 <div className="grid grid-cols-3 p-4 hover:bg-slate-50 transition-colors">
                                     <div className="col-span-2 pr-4 font-semibold text-slate-800">
                                         Withdrawal request received 15 days or less after the formally-notified last date of admission.
                                     </div>
-                                    <div className="text-right font-extrabold text-blue-600 self-center">80% Refund</div>
+                                    <div className="text-right font-bold text-primary self-center">80% Refund</div>
                                 </div>
                                 
                                 <div className="grid grid-cols-3 p-4 hover:bg-slate-50 transition-colors">
                                     <div className="col-span-2 pr-4 font-semibold text-slate-800">
                                         Withdrawal request received more than 15 days but less than 30 days after the formally-notified last date of admission.
                                     </div>
-                                    <div className="text-right font-extrabold text-slate-600 self-center">50% Refund</div>
+                                    <div className="text-right font-bold text-slate-600 self-center">50% Refund</div>
                                 </div>
                                 
                                 <div className="grid grid-cols-3 p-4 hover:bg-slate-50 transition-colors">
                                     <div className="col-span-2 pr-4 font-semibold text-slate-800">
                                         Withdrawal request received more than 30 days after the formally-notified last date of admission.
                                     </div>
-                                    <div className="text-right font-extrabold text-red-500 self-center">No Refund</div>
+                                    <div className="text-right font-bold text-slate-500 self-center">No Refund</div>
                                 </div>
                             </div>
                         </div>

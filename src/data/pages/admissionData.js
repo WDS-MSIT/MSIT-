@@ -17,7 +17,7 @@ export const admissionData = {
 
                 <!-- Sanctioned Intake & Shifts Table -->
                 <section>
-                    <h3 class="text-2xl font-bold text-slate-900 border-l-4 border-blue-600 pl-4 mb-6">Approved Academic Programs & Shifts</h3>
+                    <h3 class="text-2xl font-bold text-slate-900 border-l-4 border-primary pl-4 mb-6">Approved Academic Programs & Shifts</h3>
                     <p class="text-sm text-slate-600 mb-4">MSIT operates two dedicated academic shifts offering four-year B.Tech degree programs:</p>
                     <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
                         <table class="w-full text-left text-sm text-slate-700">
@@ -30,47 +30,47 @@ export const admissionData = {
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-slate-100">
-                                <tr class="hover:bg-blue-50/40 transition-colors">
+                                <tr class="hover:bg-primary/5 transition-colors">
                                     <td class="px-6 py-4 font-bold text-slate-900">Computer Science & Engineering (CSE)</td>
-                                    <td class="px-6 py-4 font-semibold text-blue-700">180 Seats</td>
-                                    <td class="px-6 py-4 font-semibold text-indigo-700">60 Seats</td>
-                                    <td class="px-6 py-4 font-extrabold text-slate-900">240</td>
+                                    <td class="px-6 py-4 font-semibold text-primary">180 Seats</td>
+                                    <td class="px-6 py-4 font-semibold text-primary">60 Seats</td>
+                                    <td class="px-6 py-4 font-bold text-slate-900">240</td>
                                 </tr>
-                                <tr class="hover:bg-blue-50/40 transition-colors">
+                                <tr class="hover:bg-primary/5 transition-colors">
                                     <td class="px-6 py-4 font-bold text-slate-900">Information Technology (IT)</td>
-                                    <td class="px-6 py-4 font-semibold text-blue-700">120 Seats</td>
-                                    <td class="px-6 py-4 font-semibold text-indigo-700">60 Seats</td>
-                                    <td class="px-6 py-4 font-extrabold text-slate-900">180</td>
+                                    <td class="px-6 py-4 font-semibold text-primary">120 Seats</td>
+                                    <td class="px-6 py-4 font-semibold text-primary">60 Seats</td>
+                                    <td class="px-6 py-4 font-bold text-slate-900">180</td>
                                 </tr>
-                                <tr class="hover:bg-blue-50/40 transition-colors">
+                                <tr class="hover:bg-primary/5 transition-colors">
                                     <td class="px-6 py-4 font-bold text-slate-900">Electronics & Communication Engineering (ECE)</td>
-                                    <td class="px-6 py-4 font-semibold text-blue-700">120 Seats</td>
-                                    <td class="px-6 py-4 font-semibold text-indigo-700">60 Seats</td>
-                                    <td class="px-6 py-4 font-extrabold text-slate-900">180</td>
+                                    <td class="px-6 py-4 font-semibold text-primary">120 Seats</td>
+                                    <td class="px-6 py-4 font-semibold text-primary">60 Seats</td>
+                                    <td class="px-6 py-4 font-bold text-slate-900">180</td>
                                 </tr>
-                                <tr class="hover:bg-blue-50/40 transition-colors">
+                                <tr class="hover:bg-primary/5 transition-colors">
                                     <td class="px-6 py-4 font-bold text-slate-900">Electrical & Electronics Engineering (EEE)</td>
-                                    <td class="px-6 py-4 font-semibold text-blue-700">60 Seats</td>
+                                    <td class="px-6 py-4 font-semibold text-primary">60 Seats</td>
                                     <td class="px-6 py-4 text-slate-400">N/A</td>
-                                    <td class="px-6 py-4 font-extrabold text-slate-900">60</td>
+                                    <td class="px-6 py-4 font-bold text-slate-900">60</td>
                                 </tr>
                                 <tr class="bg-slate-50 font-bold">
                                     <td class="px-6 py-4 text-slate-900">Total Regular Sanctioned Intake</td>
-                                    <td class="px-6 py-4 text-blue-800">480 Seats</td>
-                                    <td class="px-6 py-4 text-indigo-800">180 Seats</td>
-                                    <td class="px-6 py-4 text-emerald-700 text-base font-black">660 Seats</td>
+                                    <td class="px-6 py-4 text-primary">480 Seats</td>
+                                    <td class="px-6 py-4 text-primary">180 Seats</td>
+                                    <td class="px-6 py-4 text-primary text-base font-bold">660 Seats</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="mt-4 p-4 rounded-xl bg-amber-50/80 border border-amber-200 text-xs text-amber-900 leading-relaxed font-medium">
+                    <div class="mt-4 p-4 rounded-xl bg-primary/5 border border-primary/20 text-xs text-primary leading-relaxed font-medium">
                         <strong>Lateral Entry (LE B.Tech):</strong> 10% supernumerary seats in the 2nd Year (3rd Semester) are reserved across branches for State Board Diploma holders and B.Sc. Graduates through GGSIPU CET Code 128 / 129.
                     </div>
                 </section>
 
                 <!-- JEE Main Cut-offs Table -->
                 <section>
-                    <h3 class="text-2xl font-bold text-slate-900 border-l-4 border-emerald-600 pl-4 mb-6">JEE Main Opening & Closing Cut-Off Ranks</h3>
+                    <h3 class="text-2xl font-bold text-slate-900 border-l-4 border-primary pl-4 mb-6">JEE Main Opening & Closing Cut-Off Ranks</h3>
                     <p class="text-sm text-slate-600 mb-4">Admissions are governed strictly through centralized online counseling conducted by GGSIPU based on All India Common Rank List (CRL) in JEE Main (Paper 1):</p>
                     <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
                         <table class="w-full text-left text-sm text-slate-700">
@@ -86,44 +86,44 @@ export const admissionData = {
                                 <tr class="hover:bg-slate-50 transition-colors">
                                     <td class="px-5 py-3 font-bold text-slate-900 font-sans">CSE (1st Shift)</td>
                                     <td class="px-5 py-3 text-slate-700">32,450 - 45,800</td>
-                                    <td class="px-5 py-3 font-bold text-emerald-700">54,200</td>
-                                    <td class="px-5 py-3 font-bold text-blue-700">24,800</td>
+                                    <td class="px-5 py-3 font-bold text-primary">54,200</td>
+                                    <td class="px-5 py-3 font-bold text-primary">24,800</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
                                     <td class="px-5 py-3 font-bold text-slate-900 font-sans">CSE (2nd Shift)</td>
                                     <td class="px-5 py-3 text-slate-700">46,200 - 58,900</td>
-                                    <td class="px-5 py-3 font-bold text-emerald-700">68,400</td>
-                                    <td class="px-5 py-3 font-bold text-blue-700">34,500</td>
+                                    <td class="px-5 py-3 font-bold text-primary">68,400</td>
+                                    <td class="px-5 py-3 font-bold text-primary">34,500</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
                                     <td class="px-5 py-3 font-bold text-slate-900 font-sans">IT (1st Shift)</td>
                                     <td class="px-5 py-3 text-slate-700">52,100 - 66,400</td>
-                                    <td class="px-5 py-3 font-bold text-emerald-700">76,800</td>
-                                    <td class="px-5 py-3 font-bold text-blue-700">38,900</td>
+                                    <td class="px-5 py-3 font-bold text-primary">76,800</td>
+                                    <td class="px-5 py-3 font-bold text-primary">38,900</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
                                     <td class="px-5 py-3 font-bold text-slate-900 font-sans">IT (2nd Shift)</td>
                                     <td class="px-5 py-3 text-slate-700">67,800 - 79,500</td>
-                                    <td class="px-5 py-3 font-bold text-emerald-700">89,200</td>
-                                    <td class="px-5 py-3 font-bold text-blue-700">46,700</td>
+                                    <td class="px-5 py-3 font-bold text-primary">89,200</td>
+                                    <td class="px-5 py-3 font-bold text-primary">46,700</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
                                     <td class="px-5 py-3 font-bold text-slate-900 font-sans">ECE (1st Shift)</td>
                                     <td class="px-5 py-3 text-slate-700">78,400 - 98,200</td>
-                                    <td class="px-5 py-3 font-bold text-emerald-700">1,12,000</td>
-                                    <td class="px-5 py-3 font-bold text-blue-700">58,600</td>
+                                    <td class="px-5 py-3 font-bold text-primary">1,12,000</td>
+                                    <td class="px-5 py-3 font-bold text-primary">58,600</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
                                     <td class="px-5 py-3 font-bold text-slate-900 font-sans">ECE (2nd Shift)</td>
                                     <td class="px-5 py-3 text-slate-700">99,800 - 1,22,400</td>
-                                    <td class="px-5 py-3 font-bold text-emerald-700">1,38,500</td>
-                                    <td class="px-5 py-3 font-bold text-blue-700">72,400</td>
+                                    <td class="px-5 py-3 font-bold text-primary">1,38,500</td>
+                                    <td class="px-5 py-3 font-bold text-primary">72,400</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
                                     <td class="px-5 py-3 font-bold text-slate-900 font-sans">EEE (1st Shift)</td>
                                     <td class="px-5 py-3 text-slate-700">1,18,000 - 1,48,000</td>
-                                    <td class="px-5 py-3 font-bold text-emerald-700">1,78,000</td>
-                                    <td class="px-5 py-3 font-bold text-blue-700">89,500</td>
+                                    <td class="px-5 py-3 font-bold text-primary">1,78,000</td>
+                                    <td class="px-5 py-3 font-bold text-primary">89,500</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -132,7 +132,7 @@ export const admissionData = {
 
                 <!-- Annual Fee Structure Table -->
                 <section>
-                    <h3 class="text-2xl font-bold text-slate-900 border-l-4 border-indigo-600 pl-4 mb-6">Fee Structure Breakdown (Academic Year 2026–27)</h3>
+                    <h3 class="text-2xl font-bold text-slate-900 border-l-4 border-primary pl-4 mb-6">Fee Structure Breakdown (Academic Year 2026–27)</h3>
                     <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white mb-6">
                         <table class="w-full text-left text-sm text-slate-700">
                             <thead class="bg-slate-50 text-xs uppercase tracking-wider text-slate-700 border-b border-slate-200">
@@ -168,11 +168,11 @@ export const admissionData = {
                                     <td class="px-6 py-3 text-slate-400">N/A</td>
                                     <td class="px-6 py-3 text-xs text-slate-500">One-time, 100% Refundable after degree completion</td>
                                 </tr>
-                                <tr class="bg-blue-50/60 font-bold">
+                                <tr class="bg-primary/5 font-bold">
                                     <td class="px-6 py-4 text-slate-900">Total Payable at Admission</td>
-                                    <td class="px-6 py-4 text-blue-700 text-base font-black">₹1,67,000/-</td>
+                                    <td class="px-6 py-4 text-primary text-base font-bold">₹1,67,000/-</td>
                                     <td class="px-6 py-4 text-slate-700 text-base font-bold">₹1,57,000/-</td>
-                                    <td class="px-6 py-4 text-xs font-semibold text-blue-900">Payable online via Net Banking / Cards / Demand Draft</td>
+                                    <td class="px-6 py-4 text-xs font-semibold text-primary">Payable online via Net Banking / Cards / Demand Draft</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -181,7 +181,7 @@ export const admissionData = {
 
                 <!-- Management Quota Policy -->
                 <section>
-                    <h3 class="text-2xl font-bold text-slate-900 border-l-4 border-purple-600 pl-4 mb-6">Management Quota Admission Schedule & Rules</h3>
+                    <h3 class="text-2xl font-bold text-slate-900 border-l-4 border-primary pl-4 mb-6">Management Quota Admission Schedule & Rules</h3>
                     <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 space-y-4 text-sm text-slate-700 leading-relaxed">
                         <p>In accordance with the <em>Delhi Professional Colleges or Institutions Act, 2007</em> and GGSIPU guidelines, 10% of sanctioned intake seats are allotted under Management Quota.</p>
                         <ul class="list-disc pl-5 space-y-2 text-xs md:text-sm text-slate-600 font-medium">
@@ -213,12 +213,8 @@ export const admissionData = {
         heroImage: "/campus-hero.webp",
         heroImageAlt: "Official MSIT online fee payment portal and digital transaction interface overview",
         content: `
-            <p class="mb-6">MSIT provides direct access to the official Octopod fee payment portal for all academic fee transactions. Students can securely pay their tuition, annual academic, and hostel fees using Net Banking, UPI, or Credit/Debit Cards.</p>
+            <p class="font-[Libre_Baskerville,serif] text-base sm:text-[1.375rem] leading-relaxed sm:leading-[1.6] text-slate-900 mb-6 sm:mb-8">MSIT provides direct access to the official Octopod fee payment portal for all academic fee transactions. Students can securely pay their tuition, annual academic, and hostel fees using Net Banking, UPI, or Credit/Debit Cards.</p>
         `,
-        stats: [
-            { label: "Gateway", value: "Octopod Portal" },
-            { label: "Affiliation", value: "GGSIPU" }
-        ],
         bulletPoints: [
             { label: "Proceed to Official Fee Portal", url: "https://octopod.co.in/student/admission/81a9421f2cfc48f2e5f5278efa47382b" },
             { label: "Download Official Fee Notice PDF", url: "https://www.msit.in/media/news/fee-submission-notice-for-the-academic-year-2026-27.pdf" },
@@ -233,41 +229,41 @@ export const admissionData = {
         heroImage: "/campus-hero.webp",
         heroImageAlt: "MSIT students receiving merit scholarships and financial aid certificates on stage",
         content: `
-            <p class="mb-8 leading-relaxed">Maharaja Surajmal Institute of Technology actively supports students by facilitating access to diverse institutional, state, and central scholarship programs. Deserving students can avail themselves of financial support based on merit, economic status, or category requirements.</p>
+            <p class="font-[Libre_Baskerville,serif] text-base sm:text-[1.375rem] leading-relaxed sm:leading-[1.6] text-slate-900 mb-6 sm:mb-10">Maharaja Surajmal Institute of Technology actively supports students by facilitating access to diverse institutional, state, and central scholarship programs. Deserving students can avail themselves of financial support based on merit, economic status, or category requirements.</p>
 
             <!-- SECTION 1: DELHI GOVERNMENT SCHEMES -->
-            <div class="space-y-6 mb-12">
+            <div class="space-y-4 sm:space-y-6 mb-8 sm:mb-12">
                 <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-3">
                     <span class="w-1.5 h-5 bg-primary rounded-full"></span>
                     Delhi State Government Schemes
                 </h3>
                 
-                <div class="grid grid-cols-1 gap-6">
+                <div class="grid grid-cols-1 gap-3 sm:gap-6">
                     <!-- Scheme 1: Merit-cum-Means -->
-                    <div class="p-6 bg-slate-50/50 rounded-3xl border border-slate-200/50 hover:bg-white hover:shadow-md transition-all">
+                    <div class="p-4 sm:p-6 bg-white rounded-2xl sm:rounded-3xl border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all">
                         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
                             <div class="space-y-2">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-700">Delhi Govt (GNCTD)</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-primary/5 text-primary">Delhi Govt (GNCTD)</span>
                                 <h4 class="text-lg font-bold text-slate-900">Merit-cum-Means Linked Financial Assistance Scheme</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed font-light">Extends crucial financial support to meritorious and needy students pursuing higher education in NCT Delhi. Under this scheme, the Delhi Higher Education Trust through the Directorate of Higher Education (DHE) reimburses full or partial tuition fees based on family income criteria.</p>
+                                <p class="text-sm text-slate-600 leading-relaxed">Extends crucial financial support to meritorious and needy students pursuing higher education in NCT Delhi. Under this scheme, the Delhi Higher Education Trust through the Directorate of Higher Education (DHE) reimburses full or partial tuition fees based on family income criteria.</p>
                             </div>
                             <div class="flex flex-row md:flex-col gap-2 shrink-0">
-                                <a href="http://www.ipu.ac.in/dsw_policy.php" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-xs font-bold text-center text-primary bg-blue-50 hover:bg-primary hover:text-white rounded-xl transition-all border border-primary/20">View Guidelines</a>
+                                <a href="http://www.ipu.ac.in/dsw_policy.php" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-xs font-bold text-center text-primary bg-white hover:bg-primary hover:text-white rounded-xl transition-all border border-primary/20">View Guidelines</a>
                                 <a href="https://edistrict.delhigovt.nic.in/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-xs font-bold text-center text-white bg-primary hover:bg-primary/90 rounded-xl transition-all shadow-xs">Apply Online</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Scheme 2: Post Matric SC/ST/OBC -->
-                    <div class="p-6 bg-slate-50/50 rounded-3xl border border-slate-200/50 hover:bg-white hover:shadow-md transition-all">
+                    <div class="p-4 sm:p-6 bg-white rounded-2xl sm:rounded-3xl border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all">
                         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
                             <div class="space-y-2">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700">Welfare Department</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-primary/5 text-primary">Welfare Department</span>
                                 <h4 class="text-lg font-bold text-slate-900">Post Matric Scholarship for SC/ST/OBC Students</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed font-light">A centrally sponsored scheme implemented by the Department for the Welfare of SC/ST/OBC. It provides financial assistance to students belonging to reserved categories for pursuing post-matriculation or post-secondary studies (college/university levels) in India.</p>
+                                <p class="text-sm text-slate-600 leading-relaxed">A centrally sponsored scheme implemented by the Department for the Welfare of SC/ST/OBC. It provides financial assistance to students belonging to reserved categories for pursuing post-matriculation or post-secondary studies (college/university levels) in India.</p>
                             </div>
                             <div class="flex shrink-0">
-                                <a href="http://www.scstwelfare.delhigovt.nic.in/" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto px-4 py-2 text-xs font-bold text-center text-primary bg-emerald-50 hover:bg-primary hover:text-white rounded-xl transition-all border border-primary/20">Official Portal</a>
+                                <a href="http://www.scstwelfare.delhigovt.nic.in/" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto px-4 py-2 text-xs font-bold text-center text-primary bg-white hover:bg-primary hover:text-white rounded-xl transition-all border border-primary/20">Official Portal</a>
                             </div>
                         </div>
                     </div>
@@ -275,69 +271,69 @@ export const admissionData = {
             </div>
 
             <!-- SECTION 2: UNIVERSITY LEVEL SCHEMES -->
-            <div class="space-y-6 mb-12">
+            <div class="space-y-4 sm:space-y-6 mb-8 sm:mb-12">
                 <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-3">
                     <span class="w-1.5 h-5 bg-primary rounded-full"></span>
                     GGSIP University Schemes
                 </h3>
                 
-                <div class="p-6 bg-slate-50/50 rounded-3xl border border-slate-200/50 hover:bg-white hover:shadow-md transition-all">
+                <div class="p-4 sm:p-6 bg-white rounded-2xl sm:rounded-3xl border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all">
                     <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
                         <div class="space-y-2">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-700">GGSIPU DSW</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-primary/5 text-primary">GGSIPU DSW</span>
                             <h4 class="text-lg font-bold text-slate-900">Economically Weaker Section (EWS) Scheme</h4>
-                            <p class="text-sm text-slate-600 leading-relaxed font-light">Guru Gobind Singh Indraprastha University grants financial assistance to students belonging to the Economically Weaker Sections of society. The scheme aims to enhance institutional access and support students facing severe economic hardships during their studies.</p>
+                            <p class="text-sm text-slate-600 leading-relaxed">Guru Gobind Singh Indraprastha University grants financial assistance to students belonging to the Economically Weaker Sections of society. The scheme aims to enhance institutional access and support students facing severe economic hardships during their studies.</p>
                         </div>
                         <div class="flex shrink-0">
-                            <a href="http://www.ipu.ac.in/dsw_policy.php" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto px-4 py-2 text-xs font-bold text-center text-primary bg-purple-50 hover:bg-primary hover:text-white rounded-xl transition-all border border-primary/20">DSW Schemes</a>
+                            <a href="http://www.ipu.ac.in/dsw_policy.php" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto px-4 py-2 text-xs font-bold text-center text-primary bg-white hover:bg-primary hover:text-white rounded-xl transition-all border border-primary/20">DSW Schemes</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- SECTION 3: NATIONAL & AICTE SCHEMES -->
-            <div class="space-y-6 mb-12">
+            <div class="space-y-4 sm:space-y-6 mb-8 sm:mb-12">
                 <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-3">
                     <span class="w-1.5 h-5 bg-primary rounded-full"></span>
                     National & AICTE Technical Schemes
                 </h3>
                 
-                <div class="grid grid-cols-1 gap-6">
+                <div class="grid grid-cols-1 gap-3 sm:gap-6">
                     <!-- Scheme 1: Pragati -->
-                    <div class="p-6 bg-slate-50/50 rounded-3xl border border-slate-200/50 hover:bg-white hover:shadow-md transition-all">
+                    <div class="p-4 sm:p-6 bg-white rounded-2xl sm:rounded-3xl border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all">
                         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
                             <div class="space-y-2">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-pink-50 text-pink-700">AICTE MHRD</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-primary/5 text-primary">AICTE MHRD</span>
                                 <h4 class="text-lg font-bold text-slate-900">Pragati Scholarship Scheme for Girl Students</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed font-light">A prestigious initiative implemented by AICTE on behalf of the Ministry of Education. It aims to empower girls with the knowledge, skills, and self-confidence needed to pursue technical careers by providing financial aid for technical and professional programs.</p>
+                                <p class="text-sm text-slate-600 leading-relaxed">A prestigious initiative implemented by AICTE on behalf of the Ministry of Education. It aims to empower girls with the knowledge, skills, and self-confidence needed to pursue technical careers by providing financial aid for technical and professional programs.</p>
                             </div>
                             <div class="flex shrink-0">
-                                <a href="https://scholarships.gov.in" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto px-4 py-2 text-xs font-bold text-center text-primary bg-pink-50 hover:bg-primary hover:text-white rounded-xl transition-all border border-primary/20">Apply on NSP</a>
+                                <a href="https://scholarships.gov.in" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto px-4 py-2 text-xs font-bold text-center text-primary bg-white hover:bg-primary hover:text-white rounded-xl transition-all border border-primary/20">Apply on NSP</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Scheme 2: Saksham -->
-                    <div class="p-6 bg-slate-50/50 rounded-3xl border border-slate-200/50 hover:bg-white hover:shadow-md transition-all">
+                    <div class="p-4 sm:p-6 bg-white rounded-2xl sm:rounded-3xl border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all">
                         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
                             <div class="space-y-2">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700">AICTE MHRD</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-primary/5 text-primary">AICTE MHRD</span>
                                 <h4 class="text-lg font-bold text-slate-900">Saksham Scholarship Scheme for Specially Abled Students</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed font-light">Designed by the Ministry of Education and implemented by AICTE, this program encourages and supports specially-abled children to pursue higher technical education, ensuring they get equal learning opportunities and prep for a successful future.</p>
+                                <p class="text-sm text-slate-600 leading-relaxed">Designed by the Ministry of Education and implemented by AICTE, this program encourages and supports specially-abled children to pursue higher technical education, ensuring they get equal learning opportunities and prep for a successful future.</p>
                             </div>
                             <div class="flex shrink-0">
-                                <a href="https://scholarships.gov.in" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto px-4 py-2 text-xs font-bold text-center text-primary bg-indigo-50 hover:bg-primary hover:text-white rounded-xl transition-all border border-primary/20">Apply on NSP</a>
+                                <a href="https://scholarships.gov.in" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto px-4 py-2 text-xs font-bold text-center text-primary bg-white hover:bg-primary hover:text-white rounded-xl transition-all border border-primary/20">Apply on NSP</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Scheme 3: NSP Central -->
-                    <div class="p-6 bg-slate-50/50 rounded-3xl border border-slate-200/50 hover:bg-white hover:shadow-md transition-all">
+                    <div class="p-4 sm:p-6 bg-white rounded-2xl sm:rounded-3xl border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all">
                         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
                             <div class="space-y-2">
                                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">Central Government</span>
                                 <h4 class="text-lg font-bold text-slate-900">Centrally Sponsored Schemes (National Scholarship Portal)</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed font-light">A unified national portal acting as a single-window solution for central government scholarships. Enables everything from application submission, verification, processing, and direct benefit transfer (DBT) of funds to students.</p>
+                                <p class="text-sm text-slate-600 leading-relaxed">A unified national portal acting as a single-window solution for central government scholarships. Enables everything from application submission, verification, processing, and direct benefit transfer (DBT) of funds to students.</p>
                             </div>
                             <div class="flex shrink-0">
                                 <a href="https://scholarships.gov.in/" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto px-4 py-2 text-xs font-bold text-center text-white bg-primary hover:bg-primary/90 rounded-xl transition-all shadow-xs">National Portal</a>
@@ -348,37 +344,37 @@ export const admissionData = {
             </div>
 
             <!-- SECTION 4: SCHOLARSHIP COMMITTEE & FACULTY LEADERSHIP -->
-            <div class="space-y-6 mb-12">
+            <div class="space-y-4 sm:space-y-6 mb-8 sm:mb-12">
                 <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-3">
                     <span class="w-1.5 h-5 bg-primary rounded-full"></span>
                     Scholarship Committee & Faculty Leadership
                 </h3>
-                <p class="text-sm text-slate-600 leading-relaxed font-light">
+                <p class="text-sm text-slate-600 leading-relaxed">
                     The MSIT Scholarship & Financial Aid Committee oversees student welfare schemes, reviews applications, verifies state/central portal submissions, and coordinates institutional financial aid disbursals.
                 </p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Head & Convener -->
-                    <div class="p-6 bg-slate-50/80 rounded-3xl border border-slate-200 hover:border-blue-300 hover:bg-white hover:shadow-md transition-all">
-                        <div class="flex items-start gap-4">
-                            <div class="w-16 h-16 rounded-2xl overflow-hidden border-2 border-blue-200 shadow-xs shrink-0 bg-slate-100">
+                    <div class="p-4 sm:p-6 bg-white rounded-2xl sm:rounded-3xl border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all">
+                        <div class="flex items-start gap-3 sm:gap-4">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200 shrink-0 bg-slate-100">
                                 <img src="/faculty/puneet-azad.webp" alt="Prof. (Dr.) Puneet Azad" class="w-full h-full object-cover" />
                             </div>
-                            <div class="space-y-1">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-blue-100 text-blue-800">
+                            <div class="space-y-1 min-w-0">
+                                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[9px] sm:text-[10px] font-semibold uppercase tracking-wide sm:tracking-wider leading-snug bg-primary/10 text-primary">
                                     Convener & Academic Head
                                 </span>
-                                <h4 class="text-lg font-bold text-slate-900">Prof. (Dr.) Puneet Azad</h4>
-                                <p class="text-xs font-semibold text-blue-600">Professor (ECE Dept) & Dean Academics</p>
-                                <p class="text-xs text-slate-600 leading-relaxed font-light pt-1">
+                                <h4 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">Prof. (Dr.) Puneet Azad</h4>
+                                <p class="text-[11px] sm:text-xs font-medium text-primary leading-snug">Professor (ECE Dept) & Dean Academics</p>
+                                <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed pt-1 line-clamp-3 sm:line-clamp-none">
                                     Heads institutional scholarship verification, Merit-cum-Means (MCM) approval, NSP & Delhi Govt portal Nodal Desk, and overall student financial assistance schemes.
                                 </p>
-                                <div class="pt-2 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
-                                    <a href="mailto:puneet.azad@msit.in" class="inline-flex items-center gap-1 px-3 py-1 bg-white border border-slate-200 rounded-lg hover:text-blue-600 hover:border-blue-300 transition-colors">
-                                        ✉️ puneet.azad@msit.in
+                                <div class="pt-1.5 sm:pt-2 flex flex-wrap gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-medium text-slate-700">
+                                    <a href="mailto:puneet.azad@msit.in" class="inline-flex items-center gap-1 px-2.5 py-1 bg-white border border-slate-200 rounded-lg hover:text-primary hover:border-primary/30 transition-colors">
+                                        puneet.azad@msit.in
                                     </a>
-                                    <a href="/faculty?search=Puneet+Azad" class="inline-flex items-center gap-1 px-3 py-1 bg-blue-50 text-blue-700 border border-blue-100 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">
-                                        👤 View Faculty Profile
+                                    <a href="/faculty?search=Puneet+Azad" class="inline-flex items-center gap-1 px-2.5 py-1 bg-white text-primary border border-primary/20 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                        View Faculty Profile
                                     </a>
                                 </div>
                             </div>
@@ -386,26 +382,26 @@ export const admissionData = {
                     </div>
 
                     <!-- Co-Coordinator / Industry Scholarships -->
-                    <div class="p-6 bg-slate-50/80 rounded-3xl border border-slate-200 hover:border-emerald-300 hover:bg-white hover:shadow-md transition-all">
-                        <div class="flex items-start gap-4">
-                            <div class="w-16 h-16 rounded-2xl overflow-hidden border-2 border-emerald-200 shadow-xs shrink-0 bg-slate-100">
+                    <div class="p-4 sm:p-6 bg-white rounded-2xl sm:rounded-3xl border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all">
+                        <div class="flex items-start gap-3 sm:gap-4">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200 shrink-0 bg-slate-100">
                                 <img src="/faculty/sunesh-malik.webp" alt="Dr. Sunesh Malik" class="w-full h-full object-cover" />
                             </div>
-                            <div class="space-y-1">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-emerald-100 text-emerald-800">
+                            <div class="space-y-1 min-w-0">
+                                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[9px] sm:text-[10px] font-semibold uppercase tracking-wide sm:tracking-wider leading-snug bg-primary/10 text-primary">
                                     Industry & Corporate Scholarship Incharge
                                 </span>
-                                <h4 class="text-lg font-bold text-slate-900">Dr. Sunesh Malik</h4>
-                                <p class="text-xs font-semibold text-emerald-600">Associate Professor (IT Department)</p>
-                                <p class="text-xs text-slate-600 leading-relaxed font-light pt-1">
+                                <h4 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">Dr. Sunesh Malik</h4>
+                                <p class="text-[11px] sm:text-xs font-medium text-primary leading-snug">Associate Professor (IT Department)</p>
+                                <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed pt-1 line-clamp-3 sm:line-clamp-none">
                                     Coordinates corporate and industry-sponsored scholarships (such as Optum Scholarship) and departmental scholarship allocations for IT & CS students.
                                 </p>
-                                <div class="pt-2 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
-                                    <a href="mailto:suneshmalik@msit.in" class="inline-flex items-center gap-1 px-3 py-1 bg-white border border-slate-200 rounded-lg hover:text-emerald-600 hover:border-emerald-300 transition-colors">
-                                        ✉️ suneshmalik@msit.in
+                                <div class="pt-1.5 sm:pt-2 flex flex-wrap gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-medium text-slate-700">
+                                    <a href="mailto:suneshmalik@msit.in" class="inline-flex items-center gap-1 px-2.5 py-1 bg-white border border-slate-200 rounded-lg hover:text-primary hover:border-primary/30 transition-colors">
+                                        suneshmalik@msit.in
                                     </a>
-                                    <a href="/faculty?search=Sunesh+Malik" class="inline-flex items-center gap-1 px-3 py-1 bg-emerald-50 text-emerald-800 border border-emerald-100 rounded-lg hover:bg-emerald-600 hover:text-white transition-colors">
-                                        👤 View Faculty Profile
+                                    <a href="/faculty?search=Sunesh+Malik" class="inline-flex items-center gap-1 px-2.5 py-1 bg-white text-primary border border-primary/20 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                        View Faculty Profile
                                     </a>
                                 </div>
                             </div>
@@ -413,26 +409,26 @@ export const admissionData = {
                     </div>
 
                     <!-- SC/ST & Social Welfare Cell Convener -->
-                    <div class="p-6 bg-slate-50/80 rounded-3xl border border-slate-200 hover:border-purple-300 hover:bg-white hover:shadow-md transition-all">
-                        <div class="flex items-start gap-4">
-                            <div class="w-16 h-16 rounded-2xl overflow-hidden border-2 border-purple-200 shadow-xs shrink-0 bg-slate-100">
+                    <div class="p-4 sm:p-6 bg-white rounded-2xl sm:rounded-3xl border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all">
+                        <div class="flex items-start gap-3 sm:gap-4">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200 shrink-0 bg-slate-100">
                                 <img src="/faculty/naresh-kumar.webp" alt="Prof. (Dr.) Naresh Kumar" class="w-full h-full object-cover" />
                             </div>
-                            <div class="space-y-1">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-purple-100 text-purple-800">
+                            <div class="space-y-1 min-w-0">
+                                <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[9px] sm:text-[10px] font-semibold uppercase tracking-wide sm:tracking-wider leading-snug bg-primary/10 text-primary">
                                     SC/ST Welfare Cell Convener
                                 </span>
-                                <h4 class="text-lg font-bold text-slate-900">Prof. (Dr.) Naresh Kumar</h4>
-                                <p class="text-xs font-semibold text-purple-600">Professor (CSE Dept) & SC/ST Welfare Convener</p>
-                                <p class="text-xs text-slate-600 leading-relaxed font-light pt-1">
+                                <h4 class="text-base sm:text-lg font-bold text-slate-900 leading-snug">Prof. (Dr.) Naresh Kumar</h4>
+                                <p class="text-[11px] sm:text-xs font-medium text-primary leading-snug">Professor (CSE Dept) & SC/ST Welfare Convener</p>
+                                <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed pt-1 line-clamp-3 sm:line-clamp-none">
                                     Handles Post-Matric SC/ST/OBC category scholarship verification, social welfare grants, and state welfare portal approvals.
                                 </p>
-                                <div class="pt-2 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
-                                    <a href="mailto:nareshkumar@msit.in" class="inline-flex items-center gap-1 px-3 py-1 bg-white border border-slate-200 rounded-lg hover:text-purple-600 hover:border-purple-300 transition-colors">
-                                        ✉️ nareshkumar@msit.in
+                                <div class="pt-1.5 sm:pt-2 flex flex-wrap gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-medium text-slate-700">
+                                    <a href="mailto:nareshkumar@msit.in" class="inline-flex items-center gap-1 px-2.5 py-1 bg-white border border-slate-200 rounded-lg hover:text-primary hover:border-primary/30 transition-colors">
+                                        nareshkumar@msit.in
                                     </a>
-                                    <a href="/faculty?search=Naresh+Kumar" class="inline-flex items-center gap-1 px-3 py-1 bg-purple-50 text-purple-800 border border-purple-100 rounded-lg hover:bg-purple-600 hover:text-white transition-colors">
-                                        👤 View Faculty Profile
+                                    <a href="/faculty?search=Naresh+Kumar" class="inline-flex items-center gap-1 px-2.5 py-1 bg-white text-primary border border-primary/20 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                        View Faculty Profile
                                     </a>
                                 </div>
                             </div>
@@ -440,24 +436,24 @@ export const admissionData = {
                     </div>
 
                     <!-- Nodal Administrative Desk -->
-                    <div class="p-6 bg-slate-900 text-white rounded-3xl border border-slate-800 shadow-card">
+                    <div class="p-4 sm:p-6 bg-primary/5 text-slate-900 rounded-2xl sm:rounded-3xl border border-primary/15">
                         <div class="space-y-2">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-blue-500/20 text-blue-300 border border-blue-400/30">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white text-primary border border-primary/20">
                                 Institutional Nodal Desk
                             </span>
-                            <h4 class="text-lg font-bold">MSIT Scholarship & Verification Desk</h4>
-                            <p class="text-xs text-slate-300 leading-relaxed font-light">
+                            <h4 class="text-base sm:text-lg font-bold">MSIT Scholarship & Verification Desk</h4>
+                            <p class="text-xs text-slate-600 leading-relaxed">
                                 For physical document verification, portal approval stamps, e-District Delhi / NSP queries, and official receipt collection.
                             </p>
-                            <div class="pt-3 space-y-1.5 text-xs text-slate-300 font-medium">
+                            <div class="pt-3 space-y-1.5 text-xs text-slate-600">
                                 <div class="flex items-center gap-2">
-                                    <span class="text-blue-400">📍</span> Ground Floor, Main Academic Building, MSIT
+                                    <span class="font-semibold text-slate-800">Address:</span> Ground Floor, Main Academic Building, MSIT
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <span class="text-blue-400">📞</span> Office Landline: 011-45037193 / 011-25552556
+                                    <span class="font-semibold text-slate-800">Phone:</span> Office Landline: 011-45037193 / 011-25552556
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <span class="text-blue-400">✉️</span> Desk Email: director@msit.in
+                                    <span class="font-semibold text-slate-800">Email:</span> Desk Email: director@msit.in
                                 </div>
                             </div>
                         </div>
@@ -466,7 +462,7 @@ export const admissionData = {
             </div>
 
             <!-- SECTION 5: DOCUMENT DOWNLOADS -->
-            <div class="mt-8 p-6 bg-blue-50/20 border border-blue-100 rounded-3xl">
+            <div class="mt-8 p-6 bg-primary/5 border border-primary/20 rounded-3xl">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                     <div>
                         <h4 class="text-base font-bold text-slate-900 font-sans">Official Scholarship Notice</h4>
@@ -481,9 +477,11 @@ export const admissionData = {
                 </div>
             </div>
         `,
+        statsStrip: true,
         stats: [
             { label: "Annual Dispersal", value: "₹2.5 Cr+" },
-            { label: "Beneficiaries", value: "400+" }
+            { label: "Beneficiaries", value: "400+" },
+            { label: "Schemes Listed", value: "6" }
         ],
         bulletPoints: [
             { label: "Convener: Prof. (Dr.) Puneet Azad", detail: "Prof. (Dr.) Puneet Azad (Professor, ECE & Dean Academics) heads the MSIT Scholarship & Financial Aid Committee." },
@@ -500,36 +498,36 @@ export const admissionData = {
         heroImage: "/campus-hero.webp",
         heroImageAlt: "Official AICTE and NBA mandatory disclosure documents for MSIT institutional transparency",
         content: `
-            <p class="mb-6 leading-relaxed">In absolute compliance with the All India Council for Technical Education (AICTE), the University Grants Commission (UGC), and GGSIPU, MSIT publishes its mandatory disclosures for public review.</p>
+            <p class="font-[Libre_Baskerville,serif] text-base sm:text-[1.375rem] leading-relaxed sm:leading-[1.6] text-slate-900 mb-6 sm:mb-8">In absolute compliance with the All India Council for Technical Education (AICTE), the University Grants Commission (UGC), and GGSIPU, MSIT publishes its mandatory disclosures for public review.</p>
             
             <!-- ACCREDITATION TABLES/CARDS -->
             <div class="space-y-8 mt-8">
                 <!-- NBA CARD -->
-                <div class="p-6 md:p-8 rounded-3xl border border-slate-200/60 bg-linear-to-br from-slate-50/50 via-white to-white shadow-xs">
+                <div class="p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl border border-slate-200/60 bg-white shadow-xs">
                     <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
-                        <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
                         NBA Accreditation Status
                     </h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                    <div class="grid grid-cols-2 gap-4 sm:gap-6 text-sm">
                         <div class="space-y-1">
-                            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Programmes/Courses Accredited</span>
+                            <span class="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider">Programmes/Courses Accredited</span>
                             <p class="text-slate-800 font-medium">CSE, IT, ECE, EEE (All eligible UG programmes)</p>
                         </div>
                         <div class="space-y-1">
-                            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Status</span>
+                            <span class="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider">Status</span>
                             <p class="text-slate-800 font-medium">Accredited</p>
                         </div>
                         <div class="space-y-1">
-                            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Applied for Accreditation</span>
+                            <span class="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider">Applied for Accreditation</span>
                             <p class="text-slate-800 font-medium">None (All eligible programmes are fully accredited)</p>
                         </div>
                         <div class="space-y-1">
-                            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Programmes Not Applied</span>
+                            <span class="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider">Programmes Not Applied</span>
                             <p class="text-slate-800 font-medium">None</p>
                         </div>
                     </div>
                     <div class="mt-6 pt-6 border-t border-slate-100 flex">
-                        <a href="https://www.msit.in/media/uploads/2025/08/27/nba_2023_all_depts_merged.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-xl text-xs font-bold transition-all border border-blue-100/50 shadow-xs hover:shadow-md">
+                        <a href="https://www.msit.in/media/uploads/2025/08/27/nba_2023_all_depts_merged.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/5 text-primary hover:bg-primary-dark hover:text-white rounded-xl text-xs font-bold transition-all border border-primary/20 shadow-xs hover:shadow-md">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                             </svg>
@@ -539,23 +537,23 @@ export const admissionData = {
                 </div>
 
                 <!-- NAAC CARD -->
-                <div class="p-6 md:p-8 rounded-3xl border border-slate-200/60 bg-linear-to-br from-slate-50/50 via-white to-white shadow-xs">
+                <div class="p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl border border-slate-200/60 bg-white shadow-xs">
                     <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
-                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
                         NAAC Accreditation Status
                     </h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                    <div class="grid grid-cols-2 gap-4 sm:gap-6 text-sm">
                         <div class="space-y-1">
-                            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Accreditation Grade</span>
+                            <span class="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider">Accreditation Grade</span>
                             <p class="text-slate-800 font-medium">'A' Grade Status</p>
                         </div>
                         <div class="space-y-1">
-                            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Effective Date</span>
+                            <span class="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider">Effective Date</span>
                             <p class="text-slate-800 font-medium">September 21, 2022</p>
                         </div>
                     </div>
                     <div class="mt-6 pt-6 border-t border-slate-100 flex">
-                        <a href="https://www.msit.in/media/2022/12/23/naac.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white rounded-xl text-xs font-bold transition-all border border-emerald-100/50 shadow-xs hover:shadow-md">
+                        <a href="https://www.msit.in/media/2022/12/23/naac.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/5 text-primary hover:bg-primary-dark hover:text-white rounded-xl text-xs font-bold transition-all border border-primary/20 shadow-xs hover:shadow-md">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                             </svg>
@@ -565,38 +563,38 @@ export const admissionData = {
                 </div>
 
                 <!-- NIRF RANKING CARD -->
-                <div class="p-6 md:p-8 rounded-3xl border border-slate-200/80 bg-linear-to-br from-indigo-50/30 via-white to-white shadow-xs space-y-6">
+                <div class="p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl border border-slate-200/80 bg-white shadow-xs space-y-6">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
                         <div class="flex items-center gap-2">
-                            <span class="w-2.5 h-2.5 rounded-full bg-indigo-650"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
                             <h3 class="text-lg font-bold text-slate-900">National Institutional Ranking Framework (NIRF)</h3>
                         </div>
-                        <span class="inline-flex items-center px-3 py-1 bg-indigo-100 text-indigo-900 text-xs font-bold rounded-full border border-indigo-200">
+                        <span class="inline-flex items-center px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full border border-primary/20">
                             NIRF 2024 & NIRF 2023 (Govt. of India)
                         </span>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
                         <div class="space-y-1">
-                            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Evaluation Year & Body</span>
-                            <p class="text-slate-900 font-extrabold text-base">NIRF 2024</p>
+                            <span class="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider">Evaluation Year & Body</span>
+                            <p class="text-slate-900 font-bold text-base">NIRF 2024</p>
                             <p class="text-xs text-slate-500 font-medium">Ministry of Education (MoE), Govt. of India</p>
                         </div>
                         <div class="space-y-1">
-                            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Engineering Category Band</span>
-                            <p class="text-indigo-700 font-black text-base">Rank Band 201–300</p>
+                            <span class="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider">Engineering Category Band</span>
+                            <p class="text-primary font-bold text-base">Rank Band 201–300</p>
                             <p class="text-xs text-slate-500 font-medium">Verified under Engineering Discipline</p>
                         </div>
                         <div class="space-y-1">
-                            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">NIRF Institutional ID</span>
-                            <p class="text-slate-800 font-mono font-bold text-sm">IR-E-C-32863</p>
+                            <span class="text-[11px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider">NIRF Institutional ID</span>
+                            <p class="text-slate-800 font-semibold text-sm tabular-nums">IR-E-C-32863</p>
                             <p class="text-xs text-slate-500 font-medium">MSIT C-4 Janakpuri, New Delhi</p>
                         </div>
                     </div>
 
                     <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200/80 space-y-2">
                         <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">Official Verification & Classification:</span>
-                        <p class="text-xs text-slate-600 font-light leading-relaxed">
+                        <p class="text-xs text-slate-600 leading-relaxed">
                             MSIT participates strictly under the NIRF Engineering category with institutional code IR-E-C-32863. Commercial listing portals claiming Rank Band 101–150 or 151–200 conflate engineering data with our non-engineering sister institution, Maharaja Surajmal Institute (MSI). All official NIRF scores and parameter metrics can be verified directly on the Ministry of Education's official portal.
                         </p>
                     </div>
@@ -606,7 +604,7 @@ export const admissionData = {
                             href="https://www.nirfindia.org/Rankings/2024/EngineeringRanking.html" 
                             target="_blank" 
                             rel="noopener noreferrer" 
-                            class="inline-flex items-center gap-2 px-5 py-2.5 bg-indigo-650 hover:bg-indigo-700 text-white font-bold text-xs rounded-xl shadow-xs transition-all"
+                            class="inline-flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary-dark text-white font-bold text-xs rounded-xl shadow-xs transition-all"
                         >
                             <span>Official NIRF India 2024 Portal Proof</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
@@ -624,48 +622,48 @@ export const admissionData = {
                 </div>
 
                 <!-- FINANCIAL AUDIT REPORTS & BALANCE SHEETS CARD -->
-                <div class="p-6 md:p-8 rounded-3xl border border-slate-200/60 bg-linear-to-br from-slate-50/50 via-white to-white shadow-xs">
+                <div class="p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl border border-slate-200/60 bg-white shadow-xs">
                     <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
                         Institutional Financial Audit Reports & Balance Sheets
                     </h3>
-                    <p class="text-sm text-slate-600 mb-6 leading-relaxed font-light">
+                    <p class="text-sm text-slate-600 mb-5 sm:mb-6 leading-relaxed">
                         Surajmal Memorial Education Society and MSIT publish annual audited financial statements, balance sheets, and chartered accountant audit reports in absolute compliance with regulatory mandates.
                     </p>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-4">
                         <!-- 2023-24 -->
-                        <a href="https://www.msit.in/media/notices/mandatory-disclosure_PSXfseX.pdf" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-50 hover:bg-purple-50/60 border border-slate-200 hover:border-purple-200 transition-all flex flex-col justify-between group">
+                        <a href="https://www.msit.in/media/notices/mandatory-disclosure_PSXfseX.pdf" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-50 hover:bg-primary/5 border border-slate-200 hover:border-primary/20 transition-all flex flex-col justify-between group">
                             <div>
-                                <span class="px-2 py-0.5 bg-purple-100 text-purple-800 text-[10px] font-extrabold rounded-md uppercase tracking-wider">FY 2023–24</span>
-                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-purple-700 mt-2">Audited Balance Sheet</h4>
-                                <p class="text-xs text-slate-500 mt-1 font-light">As at 31st March 2024</p>
+                                <span class="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold rounded-md uppercase tracking-wider">FY 2023–24</span>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-primary mt-2">Audited Balance Sheet</h4>
+                                <p class="text-xs text-slate-500 mt-1">As at 31st March 2024</p>
                             </div>
-                            <div class="mt-4 flex items-center text-xs font-bold text-purple-700 group-hover:translate-x-1 transition-transform">
+                            <div class="mt-4 flex items-center text-xs font-bold text-primary group-hover:translate-x-1 transition-transform">
                                 Download PDF &rarr;
                             </div>
                         </a>
 
                         <!-- 2022-23 -->
-                        <a href="https://www.msit.in/media/uploads/2023/11/16/nba_2023_all_depts.pdf" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-50 hover:bg-purple-50/60 border border-slate-200 hover:border-purple-200 transition-all flex flex-col justify-between group">
+                        <a href="https://www.msit.in/media/uploads/2023/11/16/nba_2023_all_depts.pdf" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-50 hover:bg-primary/5 border border-slate-200 hover:border-primary/20 transition-all flex flex-col justify-between group">
                             <div>
-                                <span class="px-2 py-0.5 bg-slate-200 text-slate-700 text-[10px] font-extrabold rounded-md uppercase tracking-wider">FY 2022–23</span>
-                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-purple-700 mt-2">Audited Financial Statement</h4>
-                                <p class="text-xs text-slate-500 mt-1 font-light">As at 31st March 2023</p>
+                                <span class="px-2 py-0.5 bg-slate-200 text-slate-700 text-[10px] font-bold rounded-md uppercase tracking-wider">FY 2022–23</span>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-primary mt-2">Audited Financial Statement</h4>
+                                <p class="text-xs text-slate-500 mt-1">As at 31st March 2023</p>
                             </div>
-                            <div class="mt-4 flex items-center text-xs font-bold text-purple-700 group-hover:translate-x-1 transition-transform">
+                            <div class="mt-4 flex items-center text-xs font-bold text-primary group-hover:translate-x-1 transition-transform">
                                 Download PDF &rarr;
                             </div>
                         </a>
 
                         <!-- 2021-22 & Archives -->
-                        <a href="https://www.msit.in/media/notices/mandatory-disclosure_PSXfseX.pdf" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-50 hover:bg-purple-50/60 border border-slate-200 hover:border-purple-200 transition-all flex flex-col justify-between group">
+                        <a href="https://www.msit.in/media/notices/mandatory-disclosure_PSXfseX.pdf" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-50 hover:bg-primary/5 border border-slate-200 hover:border-primary/20 transition-all flex flex-col justify-between group">
                             <div>
-                                <span class="px-2 py-0.5 bg-slate-200 text-slate-700 text-[10px] font-extrabold rounded-md uppercase tracking-wider">FY 2021–22 & Archives</span>
-                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-purple-700 mt-2">Audit Report Archive</h4>
-                                <p class="text-xs text-slate-500 mt-1 font-light">Historical Statements & Filings</p>
+                                <span class="px-2 py-0.5 bg-slate-200 text-slate-700 text-[10px] font-bold rounded-md uppercase tracking-wider">FY 2021–22 & Archives</span>
+                                <h4 class="text-sm font-bold text-slate-900 group-hover:text-primary mt-2">Audit Report Archive</h4>
+                                <p class="text-xs text-slate-500 mt-1">Historical Statements & Filings</p>
                             </div>
-                            <div class="mt-4 flex items-center text-xs font-bold text-purple-700 group-hover:translate-x-1 transition-transform">
+                            <div class="mt-4 flex items-center text-xs font-bold text-primary group-hover:translate-x-1 transition-transform">
                                 Download PDF &rarr;
                             </div>
                         </a>
@@ -673,11 +671,10 @@ export const admissionData = {
                 </div>
 
                 <!-- FULL DISCLOSURE CARD -->
-                <div class="p-8 rounded-3xl border border-slate-200/60 bg-slate-900 text-white shadow-card relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 -mt-6 -mr-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-colors"></div>
-                    <h3 class="text-xl font-bold mb-3">Full Mandatory Disclosure</h3>
-                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">Download the complete, comprehensive Mandatory Disclosure document containing detailed institutional data, academic profiles, and audit reports.</p>
-                    <a href="https://www.msit.in/media/notices/mandatory-disclosure_PSXfseX.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 hover:bg-primary hover:text-white rounded-xl text-xs font-bold transition-all shadow-md">
+                <div class="p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-primary/15 bg-primary/5">
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Full Mandatory Disclosure</h3>
+                    <p class="text-slate-600 text-sm mb-5 sm:mb-6 leading-relaxed">Download the complete, comprehensive Mandatory Disclosure document containing detailed institutional data, academic profiles, and audit reports.</p>
+                    <a href="https://www.msit.in/media/notices/mandatory-disclosure_PSXfseX.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white hover:bg-primary-dark rounded-xl text-xs font-semibold transition-colors shadow-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                         </svg>
@@ -686,9 +683,12 @@ export const admissionData = {
                 </div>
             </div>
         `,
+        statsStrip: true,
         stats: [
             { label: "NAAC Grade", value: "A" },
-            { label: "NBA Accredited", value: "All UG" }
+            { label: "NBA Accredited", value: "All UG" },
+            { label: "NIRF Engg. Band", value: "201–300" },
+            { label: "Accredited Programmes", value: "4" }
         ],
         bulletPoints: [
             { label: "NBA Certificates (All Depts)", detail: "Official NBA Accreditation documents for CSE, IT, ECE, and EEE programs." },
