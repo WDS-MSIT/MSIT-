@@ -167,8 +167,8 @@ const Header = () => {
     const isTransparent = isHomePage && !isScrolled && !isMenuOpen;
 
     const headerContainerClass = isHomePage
-        ? `fixed top-0 left-0 w-full z-[60] transition-colors duration-300 ${isTransparent ? 'bg-transparent' : 'bg-white/95 backdrop-blur-md shadow-card py-1'}`
-        : `sticky top-0 z-[60] w-full transition-all duration-300 bg-white/95 backdrop-blur-md shadow-card py-1`;
+        ? `fixed top-0 left-0 w-full z-[60] transition-colors duration-300 ${isTransparent ? 'bg-transparent' : 'bg-white/95 backdrop-blur-md shadow-[0_1px_0_rgba(15,23,42,0.08)] py-1'}`
+        : `sticky top-0 z-[60] w-full transition-all duration-300 bg-white/95 backdrop-blur-md shadow-[0_1px_0_rgba(15,23,42,0.08)] py-1`;
 
     const isPathActive = (path) => location.pathname === path;
     const isCategoryActive = (categoryKey) => {
@@ -312,7 +312,7 @@ const Header = () => {
                 <div className={`transition-all duration-300 px-4 lg:px-6 xl:px-12 ${
                     isTransparent
                         ? 'bg-transparent py-2.5'
-                        : 'bg-white py-1.5 border-b border-slate-100 shadow-sm'
+                        : 'bg-white py-1.5'
                 }`}>
                     <div className="w-full max-w-screen-2xl mx-auto">
                         <nav className="hidden xl:flex justify-center items-center space-x-7 text-[13px]">

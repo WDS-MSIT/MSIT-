@@ -170,8 +170,8 @@ const Placements = () => {
                 accentTitle="Records & Success" 
                 description="Maharaja Surajmal Institute of Technology (MSIT) has a legacy of producing industry-ready engineers. Explore our decade-long track record of stellar placements."
                 breadcrumbs={[{ label: 'Placements' }]}
-                heroImage="/campus/main-academic-building.webp"
-                heroImageAlt="MSIT academic blocks across the main sports field, New Delhi"
+                heroImage="/campus/conference-room.jpg"
+                heroImageAlt="MSIT conference room used for placement interviews and pre-placement talks"
             />
 
             {/* Key figures: a slim strip over the hero */}

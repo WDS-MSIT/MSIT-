@@ -342,8 +342,8 @@ export const campusLifeData = {
         subtitle: "Emergency Preparedness, Risk Mitigation, Fire NOC Certification, and Evacuation Protocols at MSIT.",
         seo_description: "Learn about disaster management, fire safety compliance, emergency evacuation SOPs, and safety drills at Maharaja Surajmal Institute of Technology.",
         category: "Campus Life",
-        heroImage: "/campus-hero.webp",
-        heroImageAlt: "Emergency response and fire safety mock drill conducted at the MSIT Janakpuri campus",
+        heroImage: "/campus/msit-gate-2.jpg",
+        heroImageAlt: "Gate 2 of the MSIT campus in Janakpuri, New Delhi",
         content: `
             <div class="space-y-8 sm:space-y-12">
                 <!-- Institutional Safety Mandate -->
@@ -799,8 +799,8 @@ export const campusLifeData = {
         subtitle: "Stay connected with the latest news, opportunities, achievements, events and publications from across MSIT. Subscribe to what interests you.",
         seo_description: "Access official newsletters, research journals, bulletins, and magazines of Maharaja Surajmal Institute of Technology. Subscribe to updates and download issues.",
         category: "Student Life",
-        heroImage: "/campus-hero.webp",
-        heroImageAlt: "MSIT Newsletters & Magazines",
+        heroImage: "/campus/library-journals-rack.jpg",
+        heroImageAlt: "Journals and magazines on the display rack in the MSIT library",
         content: ""
     }
 };

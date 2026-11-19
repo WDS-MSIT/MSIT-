@@ -15,11 +15,11 @@ const KeyFiguresStrip = ({ items, className = 'max-w-7xl' }) => {
                     const body = (
                         <>
                             <dd className="font-[Libre_Baskerville,serif] text-[13px] min-[400px]:text-base sm:text-2xl md:text-3xl font-bold text-primary tabular-nums leading-none whitespace-nowrap">{item.value}</dd>
-                            <dt className="order-first sm:order-none mb-1 sm:mb-0 sm:mt-2 text-[8.5px] sm:text-xs font-semibold uppercase tracking-wide sm:tracking-wider text-slate-600 leading-tight">{item.label}</dt>
+                            <dt className="mt-1 sm:mt-2 text-[8.5px] sm:text-xs font-semibold uppercase tracking-wide sm:tracking-wider text-slate-600 leading-tight">{item.label}</dt>
                             {item.note && <span className="hidden md:block mt-1 text-xs text-slate-500">{item.note}</span>}
                         </>
                     );
-                    const cell = 'flex flex-col items-center sm:items-start text-center sm:text-left px-1 py-2.5 sm:px-6 sm:py-5';
+                    const cell = 'flex flex-col items-center justify-start sm:items-start text-center sm:text-left px-1 py-3 sm:px-6 sm:py-5';
                     if (!target) return <div key={i} className={cell}>{body}</div>;
                     // dt/dd must stay direct children of the cell, so the link covers the cell instead of wrapping it.
                     const cover = 'absolute inset-0 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-primary/40';

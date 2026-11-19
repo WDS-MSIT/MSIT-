@@ -21,6 +21,8 @@ const TimeTable = () => {
                 accentTitle="Time Table" 
                 description="View and download the latest department-wise class and laboratory schedules for the current academic semester at MSIT."
                 breadcrumbs={[{ label: 'Academics' }, { label: 'Time Table' }]}
+                heroImage="/campus/students-coding-lab.jpg"
+                heroImageAlt="MSIT students working on laptops in a campus lab"
             />
 
             <div className="max-w-5xl mx-auto px-6 py-16">

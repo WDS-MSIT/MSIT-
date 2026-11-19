@@ -53,10 +53,13 @@ const DynamicPage = () => {
     }, [processedContent, isDeptPage]);
     const [activeTocId, setActiveTocId] = useState(null);
 
-    // Sidebar scrolls with the page. A short sidebar stays pinned under the header; a tall one keeps moving
-    // until its last card is in view, then stays there, so the right column never sits empty.
+    // Sidebar scrolls with the page. A sidebar that fits stays pinned under the header with some breathing room.
+    // One that is taller than the screen would have its top hidden under the header, so instead its cards scroll
+    // away and only the "On this page" box stays pinned (moved to the bottom of the column). With no such box,
+    // a tall sidebar keeps moving until its last card is in view, so the right column never sits empty.
     const sidebarRef = useRef(null);
     const [sidebarTop, setSidebarTop] = useState(160);
+    const [sidebarMode, setSidebarMode] = useState('pin'); // 'pin' | 'toc' | 'bottom'
     useEffect(() => {
         const el = sidebarRef.current;
         if (!el) return;
@@ -66,8 +69,22 @@ const DynamicPage = () => {
             frame = 0;
             const header = document.querySelector('header');
             const headerBottom = header ? Math.max(0, header.getBoundingClientRect().bottom) : 128;
-            const pinned = Math.round(headerBottom + 16);
-            setSidebarTop(Math.min(pinned, window.innerHeight - el.offsetHeight - 24));
+            const pinned = Math.round(headerBottom + 32);
+            // Measure the cards themselves (the box can be stretched to the column height in 'toc' mode).
+            const cards = [...el.children].filter(c => c.offsetHeight > 0);
+            const contentH = cards.reduce((sum, c) => sum + c.offsetHeight, 0) + 24 * Math.max(0, cards.length - 1);
+            const room = window.innerHeight - pinned - 24;
+            const hasToc = Boolean(el.querySelector('nav[aria-label="On this page"]'));
+            if (contentH <= room) {
+                setSidebarMode('pin');
+                setSidebarTop(pinned);
+            } else if (hasToc) {
+                setSidebarMode('toc');
+                setSidebarTop(pinned);
+            } else {
+                setSidebarMode('bottom');
+                setSidebarTop(Math.min(pinned, window.innerHeight - contentH - 24));
+            }
         };
         const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
         update();
@@ -255,6 +272,8 @@ const DynamicPage = () => {
                     breadcrumbs={[
                         { label: pageData.title }
                     ]}
+                    heroImage={pageData.heroImage}
+                    heroImageAlt={pageData.heroImageAlt}
                 />
                 <section className="bg-slate-50 border-b border-slate-100 transition-colors">
                     <NewslettersMagazines />
@@ -268,8 +287,8 @@ const DynamicPage = () => {
     }
 
     const isDepartment = ['cse', 'it', 'ece', 'eee', 'applied-sciences'].includes(slug);
-    // Only the fee page uses its sidebar as tabs, so it alone keeps the sidebar above the content on phones.
-    const sidebarFirstOnMobile = slug === 'online-fee';
+    // On phones the sidebar (Key Highlights, Questions) always follows the content. The fee page's tabs now live in its content.
+    const sidebarFirstOnMobile = false;
     // Pages whose content stands on its own (events, policy pages) drop the sidebar and use the full width.
     const fullWidth = pageData.layout === 'full';
     // Pages that show their key figures as the slim strip over the hero (like Placements) instead of sidebar cards.
@@ -415,7 +434,11 @@ const DynamicPage = () => {
 
                         {/* Interactive Sidebar */}
                         <div className={`${fullWidth ? 'hidden' : 'w-full lg:w-1/3'} ${sidebarFirstOnMobile ? 'order-1' : 'order-2'} lg:order-2`}>
-                            <div ref={sidebarRef} className="lg:sticky space-y-6" style={{ top: sidebarTop }}>
+                            <div
+                                ref={sidebarRef}
+                                className={sidebarMode === 'toc' ? 'lg:h-full flex flex-col gap-6' : 'lg:sticky space-y-6'}
+                                style={sidebarMode === 'toc' ? undefined : { top: sidebarTop }}
+                            >
 
                                 {/* Stats Cards */}
                                 {!isDepartment && !heroStrip && pageData.stats && pageData.stats.length > 0 && (
@@ -473,7 +496,11 @@ const DynamicPage = () => {
 
                                 {/* On this page */}
                                 {tocItems.length >= 3 && (
-                                    <nav aria-label="On this page" className="hidden lg:block bg-white p-5 rounded-2xl border border-slate-200 shadow-card">
+                                    <nav
+                                        aria-label="On this page"
+                                        className={`hidden lg:block bg-white p-5 rounded-2xl border border-slate-200 shadow-card ${sidebarMode === 'toc' ? 'lg:order-last lg:sticky' : ''}`}
+                                        style={sidebarMode === 'toc' ? { top: sidebarTop } : undefined}
+                                    >
                                         <h4 className="px-3 mb-2 text-xs font-bold uppercase tracking-widest text-muted">On this page</h4>
                                         <ul className="space-y-0.5">
                                             {tocItems.map(item => {
@@ -515,13 +542,13 @@ const DynamicPage = () => {
 
                                 {/* Key Highlights */}
                                 {pageData.bulletPoints && pageData.bulletPoints.length > 0 && (
-                                    <div className="bg-slate-900 p-6 sm:p-8 rounded-2xl text-white shadow-card border border-slate-800/80">
-                                        <div className="flex items-center justify-between mb-5 pb-3 border-b border-white/10">
+                                    <div className="bg-white p-6 sm:p-8 rounded-2xl text-slate-900 shadow-card border border-slate-200">
+                                        <div className="flex items-center justify-between mb-5 pb-3 border-b border-slate-100">
                                             <h4 className="text-base sm:text-lg font-bold flex items-center gap-2.5">
                                                 <span className="w-2 h-2 rounded-full bg-primary"></span>
                                                 Key Highlights
                                             </h4>
-                                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest bg-white/5 px-2.5 py-1 rounded-full border border-white/10">
+                                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest bg-slate-50 px-2.5 py-1 rounded-full border border-slate-200">
                                                 Interactive
                                             </span>
                                         </div>
@@ -573,16 +600,16 @@ const DynamicPage = () => {
                                                         <li key={i}>
                                                             <Component
                                                                 {...linkProps}
-                                                                className="flex items-center justify-between p-3.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 hover:border-[#8fb0ee]/40 text-slate-200 hover:text-white transition-all group cursor-pointer"
+                                                                className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 hover:bg-primary/5 border border-slate-200/70 hover:border-primary/30 text-slate-700 hover:text-primary transition-all group cursor-pointer"
                                                             >
                                                                 <div className="flex items-center gap-3 min-w-0 pr-2">
-                                                                    <ArrowRight className="w-4 h-4 text-[#8fb0ee] shrink-0 group-hover:translate-x-0.5 transition-transform" />
+                                                                    <ArrowRight className="w-4 h-4 text-primary shrink-0 group-hover:translate-x-0.5 transition-transform" />
                                                                     <span className="text-sm font-semibold truncate" dangerouslySetInnerHTML={{ __html: labelText }}></span>
                                                                 </div>
                                                                 {pointUrl.startsWith('http') ? (
-                                                                    <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-[#8fb0ee] shrink-0 transition-colors" />
+                                                                    <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-primary shrink-0 transition-colors" />
                                                                 ) : (
-                                                                    <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#8fb0ee] shrink-0 transition-colors" />
+                                                                    <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-primary shrink-0 transition-colors" />
                                                                 )}
                                                             </Component>
                                                         </li>
@@ -590,7 +617,7 @@ const DynamicPage = () => {
                                                 }
 
                                                 return (
-                                                    <li key={i} className={`rounded-xl border transition-all ${isExpanded ? 'bg-white/[0.07] border-[#8fb0ee]/40 shadow-sm' : 'bg-white/[0.03] hover:bg-white/[0.06] border-white/5'}`}>
+                                                    <li key={i} className={`rounded-xl border transition-all ${isExpanded ? 'bg-primary/5 border-primary/30' : 'bg-slate-50 hover:bg-slate-100 border-slate-200/70'}`}>
                                                         <div
                                                             role="button"
                                                             tabIndex={0}
@@ -605,9 +632,9 @@ const DynamicPage = () => {
                                                             className="w-full flex items-center justify-between p-3.5 text-left transition-colors cursor-pointer group focus:outline-none"
                                                         >
                                                             <div className="flex items-center gap-3 min-w-0 pr-2">
-                                                                <span className={`w-2 h-2 rounded-full shrink-0 transition-all ${isActive ? 'bg-[#8fb0ee] scale-125' : 'bg-slate-500 group-hover:bg-slate-300'}`}></span>
+                                                                <span className={`w-2 h-2 rounded-full shrink-0 transition-all ${isActive ? 'bg-primary scale-125' : 'bg-slate-300 group-hover:bg-slate-400'}`}></span>
                                                                 <span 
-                                                                    className={`text-sm font-semibold transition-colors ${isActive ? 'text-[#8fb0ee] font-bold' : 'text-slate-200 group-hover:text-white'}`}
+                                                                    className={`text-sm font-semibold transition-colors ${isActive ? 'text-primary font-bold' : 'text-slate-700 group-hover:text-slate-900'}`}
                                                                     dangerouslySetInnerHTML={{ __html: labelText }}
                                                                 ></span>
                                                             </div>
@@ -624,18 +651,18 @@ const DynamicPage = () => {
                                                                             }
                                                                         }}
                                                                         title="Direct link"
-                                                                        className="p-1 rounded-md text-slate-400 hover:text-[#8fb0ee] hover:bg-white/10 transition-colors cursor-pointer"
+                                                                        className="p-1 rounded-md text-slate-400 hover:text-primary hover:bg-slate-100 transition-colors cursor-pointer"
                                                                     >
                                                                         {pointUrl.startsWith('http') ? <ExternalLink size={13} /> : <ArrowRight size={13} />}
                                                                     </button>
                                                                 )}
-                                                                <ChevronDown className={`w-4 h-4 text-slate-400 group-hover:text-white transition-transform duration-300 ${isExpanded ? 'rotate-180 text-[#8fb0ee]' : ''}`} />
+                                                                <ChevronDown className={`w-4 h-4 text-slate-400 group-hover:text-slate-700 transition-transform duration-300 ${isExpanded ? 'rotate-180 text-primary' : ''}`} />
                                                             </div>
                                                         </div>
 
                                                         {isExpanded && detailText && (
-                                                            <div className="px-4 pb-4 pt-1 text-xs text-slate-300 border-t border-white/5 space-y-3 animate-fade-in">
-                                                                <p className="leading-relaxed font-normal text-slate-300">{detailText}</p>
+                                                            <div className="px-4 pb-4 pt-1 text-xs text-slate-600 border-t border-slate-200/70 space-y-3 animate-fade-in">
+                                                                <p className="leading-relaxed font-normal text-slate-600">{detailText}</p>
                                                                 {pointUrl && (
                                                                     <div className="pt-1">
                                                                         {pointUrl.startsWith('http') ? (
